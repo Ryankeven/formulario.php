@@ -1,26 +1,33 @@
-<?php
+<html>
+<body style = "font-family:times, times new roman, serif;" bgcolor="#00BFFF" text="#000000" >
 
-$name = $_POST['name' ];
-$email = $_POST[ 'email' ];
-$ddd = $_POST[ 'ddd'];
-$number = $_POST[ 'number' ];
-$feedback = $_POST[ 'feedback' ];
-$quality = $_POST[ 'quality' ];
+ <?php
+  if (empty($_POST["age"])) {
+   echo "<br>Age field needs to be filled in!";
+   }
 
+  elseif (empty($_POST["name"])) {
+   echo "<br>Name field needs to be filled in!";
+   }
 
+  elseif (empty($_POST["nationality"])) {
+   echo "<br>Nationality field needs to be filled in!";
+   }
 
-?>
+  elseif (empty($_POST["date_of_birth"])) {
+   echo "<br>Date of birth field needs to be filled in!";
+   }
 
- <div>
+  else {
+ ?>
 
+ <br>
 
-Name: <?= $name ?><BR>
-Feedback: <?= $feedback ?><BR>
-Email: <?= $email ?><BR>
-Telephone: <?= $ddd ?>
-<?= $number ?> <BR>
-Feedback: <?= $feedback ?><BR>
-Service Quality: <?= $quality ?><BR>
+ Welcome <?php echo $_POST["name"]; ?>, we are currently reviewing your profile and will soon return you the result.<br>
 
+ <?php
+ }
+ ?>
 
- </div>
+</body>
+</html>
