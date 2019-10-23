@@ -57,12 +57,13 @@
             <input type="radio" name="gender" id="gender" value="M" /> M
            </td>
           </tr>
-       </table>
-	<tr>
-         <td>
-          <input type="submit" name="Register" id="Register" value="Submit" /> 
-         </td>
-	</tr>
+      
+	        <tr>
+           <td>
+            <input type="submit" name="Register" id="Register" value="Submit" /> 
+           </td>
+	         </tr>
+         </table>
 </form>
 </body>
 </html>

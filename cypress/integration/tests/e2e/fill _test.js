@@ -11,6 +11,7 @@ describe('Fill Test', function() {
       cy.get('#date_of_birth').type('11/11/1111')
       cy.get('[type="radio"]').check('F')
       cy.get('input[name="Register"]').click()
+      cy.contains('Welcome Teste, we are currently reviewing your profile and will soon return you the result.')
   
     })
   })
